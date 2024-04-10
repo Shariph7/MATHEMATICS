@@ -31,13 +31,3 @@ print(top_4_teams)
 plt.scatter(net_rr,match_won)
 plt.plot(net_rr, model)
 plt.show()
-
-'''
-model = np.poly1d(np.polyfit(net_rr,match_won,3))
-
-line = np.linspace(max(net_rr), min(net_rr), 100)
-print(r2_score(match_won,model(net_rr)))
-
-plt.scatter(net_rr, match_won)
-plt.plot(line, model(line))
-plt.show()'''
