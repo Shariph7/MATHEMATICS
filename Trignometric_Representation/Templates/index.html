@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Plotter</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select an Equation to Plot</h2>
+    <form action="/plot" method="POST">
+        <select name="equation">
+            <option value="sine">Sine</option>
+            <option value="cosine">Cosine</option>
+            <option value="tangent">Tangent</option>
+        </select>
+        <button type="submit">Plot</button>
+    </form>
+</body>
+</html>
